@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumbler</title>
+    <link rel="icon" href="./assets/img/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/248332ce05.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/postPage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="postInfo"></div>
+      <div class="loader">
+        <div class="loader__animation">
+          <h1 class="animation__title">Loading...</h1>
+          <img
+            id="loaderImage"
+            class="animation__img--loading animation__img"
+            src="./assets/img/loader.png"
+            alt="Logo"
+          />
+        </div>
+      </div>
+      <div class="confirmation">
+        <div class="confirmation__box">
+          <div class="question">
+            <h1 class="question__title">
+              Are you sure you want to delete this post?
+            </h1>
+          </div>
+          <div class="buttons">
+            <button class="button__yes">YES</button>
+            <button class="button__no">NO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/pages/postPage.js"></script>
+  </body>
+</html>

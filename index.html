@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumbler</title>
+    <link rel="icon" href="./assets/img/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/248332ce05.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/homePage.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav__searchContainer">
+        <img
+          class="searchContainer__icon"
+          src="./assets/img/iconNav.png"
+          alt="Logo"
+        />
+        <div class="searchBar">
+          <label for="search" class="searchBar__label">search tittle</label>
+          <input
+            class="searchBar__input"
+            name="search"
+            id="search"
+            type="text"
+            placeholder="Search..."
+            autocomplete="off"
+          />
+          <button class="searchBar_button">
+            <i class="fa-solid fa-magnifying-glass button__icon"></i>
+          </button>
+        </div>
+      </div>
+      <button class="nav__addPost">
+        <img
+          class="addPost__icon"
+          src="./assets/img/addPostIcon.png"
+          alt="Logo"
+        />
+      </button>
+    </div>
+    <div class="navigationBar">
+      <button class="happeningNow">
+        Happening Now
+        <img
+          class="happeningNow__icon"
+          src="./assets/img/spacecraftIcon.png"
+          alt="Logo"
+        />
+      </button>
+      <button class="allPosts">
+        All Posts
+        <img
+          class="allPosts__icon"
+          src="./assets/img/postIcon.png"
+          alt="Logo"
+        />
+      </button>
+    </div>
+    <div class="container">
+      <div class="recentPostsContainer"></div>
+      <div class="remainingPostsContainer"></div>
+      <div class="allPostContainer"></div>
+      <div class="loader">
+      <div class="loader__animation">
+        <h1 class="animation__title">Loading...</h1>
+        <img
+          id="loaderImage"
+          class="animation__img--loading animation__img"
+          src="./assets/img/loader.png"
+          alt="Logo"
+        />
+      </div>
+    </div>
+    <script type="module" src="./js/pages/homePage.js"></script>
+  </body>
+</html>

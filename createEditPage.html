@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumbler</title>
+    <link rel="icon" href="./assets/img/icon.png" />
+    <link rel="stylesheet" href="./css/createEditPage.css" />
+    <script
+      src="https://kit.fontawesome.com/248332ce05.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form class="container" method="POST">
+      <div class="postInfo">
+        <div class="postInfo__inputContainer">
+          <i class="fa-solid fa-user-large input__icon"></i>
+          <label class="inputContainer__label" for="author"> Author</label>
+          <select
+            class="inputContainer__select"
+            name="author"
+            id="author"
+          ></select>
+        </div>
+        <div class="postInfo__inputContainer">
+          <label class="inputContainer__label" for="title">Tittle</label>
+          <input
+            type="text"
+            name="title"
+            class="inputContainer__input"
+            placeholder="Title"
+          />
+        </div>
+        <div class="postInfo__inputContainer">
+          <label class="inputContainer__label" for="subTitle">Sub-Tittle</label>
+          <input
+            type="text"
+            name="subTitle"
+            class="inputContainer__input"
+            placeholder="Sub-Title"
+          />
+        </div>
+        <div class="postInfo__inputContainer">
+          <i class="fa-solid fa-image input__icon"></i>
+          <label class="inputContainer__label" for="urlImg">Url Image</label>
+          <input
+            type="text"
+            name="urlImg"
+            class="inputContainer__input"
+            placeholder="Image url"
+          />
+          <i class="fa-solid fa-hashtag input__icon"></i>
+          <label class="inputContainer__label" for="tag">tag</label>
+          <input
+            type="text"
+            name="tag"
+            class="inputContainer__input"
+            placeholder="tag separated whit ','"
+          />
+        </div>
+        <div class="postInfo__inputContainer">
+          <label class="inputContainer__label" for="description">Body</label>
+          <textarea
+            name="description"
+            class="inputContainer__body"
+            placeholder="Please write the description..."
+          ></textarea>
+        </div>
+      </div>
+      <div class="container__button">
+        <button class="container__button--cancel" name="cancel">CANCEL</button>
+        <button
+          class="container__button--send"
+          disabled
+          type="submit"
+          name="post"
+        >
+          POST
+        </button>
+      </div>
+    </form>
+    <div class="loader">
+      <div class="loader__animation">
+        <h1 class="animation__title">Loading...</h1>
+        <img
+          id="loaderImage"
+          class="animation__img--loading animation__img"
+          src="./assets/img/loader.png"
+          alt="Logo"
+        />
+      </div>
+    </div>
+    <script type="module" src="./js/pages/createEditPage.js"></script>
+  </body>
+</html>
