@@ -1,4 +1,4 @@
-# <center> Week 03 - Sumbler App </center>
+# <center> Sumbler App </center>
 
 ## What is about?
 
